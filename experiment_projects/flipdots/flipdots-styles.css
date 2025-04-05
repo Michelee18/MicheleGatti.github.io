@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background: #1d1d1d;
+    color: white;
+    padding-bottom: 80px; /* Extra bottom space */
+    text-align: center; /* Center text */
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 60px;
+    background: #1d1d1d;
+}
+
+a.logo {
+    font-size: 30px;
+    font-weight: 550;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a.logo:hover {
+    color: #4b4b4b;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #4b4b4b;
+}
+
+/* Video Container */
+.video-container {
+    width: 80%;
+    max-width: 700px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.background-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Text Below the Video */
+.video-text {
+    text-align: center;
+    margin-top: 30px; /* Space between video and text */
+    padding: 20px;
+}
+
+.video-text h1 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.video-text h2 {
+    font-size: 15px;
+    font-weight: 200;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Extra bottom space */
+body::after {
+    content: "";
+    display: block;
+    height: 100px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .video-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 20px 10px;
+    }
+
+    .nav a {
+        font-size: 16px;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+}

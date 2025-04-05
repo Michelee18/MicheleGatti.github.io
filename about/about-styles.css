@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background: #1d1d1d;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    background: #1d1d1d;
+    color: white;
+}
+
+a.logo {
+    font-size: 40px;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Add hover effect to the logo */
+a.logo:hover {
+    color: #4b4b4b;
+}
+
+/* Ensure no color change after click or visit */
+a.logo:visited {
+    color: white; /* Keeps the color as white even after the link is visited */
+}
+
+a.logo:active {
+    color: white; /* Keeps the color the same as normal when the link is clicked */
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #4b4b4b;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 30px 0px;
+    padding: 60px;
+    color: white;
+    font-size: 35px;
+    font-weight: 200;
+    line-height: 1.1;
+    text-align: left;
+}
+
+.contacts {
+    max-width: 600px;
+    margin: 50px 0px;
+    padding: 60px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.contacts h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contacts p {
+    font-size: 18px;
+    color: #d3d3d3;
+    margin: 5px 0;
+}
+
+.cv {
+    text-align: center;
+    margin: 50px 50px;
+    padding: 0px;
+    text-align: left;
+}
+
+
+.cv a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: medium;
+    border: 2px solid white;
+    border-radius: 50px; /* Full rounded borders */
+    transition: all 0.3s ease-in-out;
+    background: transparent;
+}
+
+.cv a:hover {
+    background: white;
+    color: #000000;
+}
+
+
+
+

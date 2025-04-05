@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Michele Gatti" />
+    <meta name="description" content="Welcome to my portfolio website" />
+    <title>Hard Surface Modeling</title>
+    <link rel="stylesheet" href="hardsurfacemodeling-styles.css"> <!-- Link to a single CSS file -->
+</head>
+<body>
+    <header class="header">
+        <!-- Link the logo to the index.html (Home Page) -->
+        <a href="../../index/index.html" class="logo">MG</a>
+        <nav class="nav">
+            <!-- Link to Experiments page -->
+            <a href="../../experiments/eperiments.html">Experiments</a>
+            <!-- Link to About page -->
+            <a href="../../about/about.html">About</a>
+        </nav>
+    </header>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <!-- Slides -->
+        <div class="mySlides fade" style="background-image: url('../hard_surface_modeling/hardsurfacemodeling_materials/esame-c4d-vista-2.jpg');"></div>
+        <div class="mySlides fade" style="background-image: url('../hard_surface_modeling/hardsurfacemodeling_materials/esame-c4d-vista-3.jpg');"></div>
+        <div class="mySlides fade" style="background-image: url('../hard_surface_modeling/hardsurfacemodeling_materials/cel-render.jpg');"></div>
+        <div class="mySlides fade" style="background-image: url('../hard_surface_modeling/hardsurfacemodeling_materials/cel-render-2.jpg');"></div>
+        <div class="mySlides fade" style="background-image: url('../hard_surface_modeling/hardsurfacemodeling_materials/cel-render-3.jpg');"></div>
+
+        <div class="slideshow-text">
+            <h1>Hard Surface Modeling</h1>
+            <h2>My first approach to 3D graphics was through modeling, i started by learning the basics of hard surface modeling on Cinema 4D,
+                This was in fact the first 3D project i made, it was the final assingnement for the Modeling class i attended at the university.
+                I tried recreating the high density compessed steam engine from Steam Boy a film directed by the legendary Katsuhiro Otomo.</h2>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        let slides = document.getElementsByClassName("mySlides"); // Declare slides globally
+        
+        function showSlides() {
+            // Hide all slides
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+        
+            // If slideIndex exceeds the number of slides, reset to 1
+            if (slideIndex >= slides.length) {slideIndex = 0}
+            if (slideIndex < 0) {slideIndex = slides.length - 1}
+        
+            // Display the active slide
+            slides[slideIndex].style.display = "block";  
+            
+            // Update slideIndex to move to the next slide automatically
+            slideIndex++;
+        }
+        
+        // Automatically change slides every 3 seconds (3000 milliseconds)
+        setInterval(showSlides, 1000);
+        
+        // Initialize slideshow
+        showSlides(); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Michele Gatti" />
+    <meta name="description" content="Welcome to my portfolio website" />
+    <title>Path Tracing</title>
+    <link rel="stylesheet" href="pathtracing-styles.css"> <!-- Link to a single CSS file -->
+</head>
+<body>
+    <header class="header">
+        <!-- Link the logo to the index.html (Home Page) -->
+        <a href="../../index/index.html" class="logo">MG</a>
+        <nav class="nav">
+            <!-- Link to Experiments page -->
+            <a href="../../experiments/eperiments.html">Experiments</a>
+            <!-- Link to About page -->
+            <a href="../../about/about.html">About</a>
+        </nav>
+    </header>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <!-- Slides -->
+        <div class="mySlides fade" style="background-image: url('../path_tracing/pathtracing/3.png');"></div>
+        <div class="mySlides fade" style="background-image: url('../path_tracing/pathtracing/4.png');"></div>
+        <div class="mySlides fade" style="background-image: url('../path_tracing/pathtracing/5.png');"></div>
+
+        <div class="slideshow-text">
+            <h1>Path Tracing</h1>
+            <h2>This experiment explores a basic path tracer in Max/MSP using shaders, with a Bounding Volume Hierarchy (BVH) optimized by the Surface Area Heuristic (SAH). The focus is on improving ray tracing efficiency and performance through optimized scene geometry in real-time rendering.</h2>
+        </div>
+    </div>
+
+    <script>
+let slideIndex = 0;
+let slides = document.getElementsByClassName("mySlides");
+
+function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+
+    slideIndex++;
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    }
+
+    slides[slideIndex].style.display = "block";
+}
+
+// Start slideshow with an initial delay
+showSlides(); 
+setInterval(showSlides, 1000); // Change slide every 3 seconds
+
+    </script>
+</body>
+</html>

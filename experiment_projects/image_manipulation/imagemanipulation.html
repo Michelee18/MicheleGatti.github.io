@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Michele Gatti" />
+    <meta name="description" content="Explore the world of video sculptures" />
+    <title>Image Manipulation</title>
+    <link rel="stylesheet" href="imagemanipulation-styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <header class="header">
+        <a href="../../index/index.html" class="logo">MG</a>
+        <nav class="nav">
+            <a href="../../experiments/eperiments.html">Experiments</a>
+            <a href="../../about/about.html">About</a>
+        </nav>
+    </header>
+
+    <!-- Video Row -->
+    <div class="video-row">
+        <div class="video-container">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="../image_manipulation/imagemanipulation_materials/expolsion1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-container">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="../image_manipulation/imagemanipulation_materials/expolsion2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Text below videos -->
+    <div class="video-text">
+        <h1>Image Manipulation</h1>
+        <h2>This Houdini experiment uses MLOps tools to transform 3D geometry and volumes into images by transferring them onto a plane. The images are then created and manipulated using VEX, applying machine learning techniques to control details and shading based on the original scene.</h2>
+    </div>
+
+    <!-- Image Row -->
+    <div class="image-row">
+        <img src="../image_manipulation/imagemanipulation_materials/flipbook_1.jpg" alt="Image 1" class="square-image">
+        <img src="../image_manipulation/imagemanipulation_materials/flipbook_3.jpg" alt="Image 2" class="square-image">
+    </div>
+</body>
+</html>

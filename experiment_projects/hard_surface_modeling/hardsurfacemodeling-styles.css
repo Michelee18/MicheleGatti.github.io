@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background: #1d1d1d;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 60px;
+    background: #1d1d1d;
+    color: white;
+}
+
+a.logo {
+    font-size: 30px;
+    font-weight: 550;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a.logo:hover {
+    color: #4b4b4b;
+}
+
+a.logo:visited,
+a.logo:active {
+    color: white;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #4b4b4b;
+}
+
+/* Projects */
+.projects {
+    gap: 15px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-text {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-weight: medium;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.project:hover .project-text {
+    opacity: 1;
+}
+
+.project video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    transition: max-width 0.3s ease-in-out;
+}
+
+.project video::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.project:hover video {
+    filter: brightness(0.7);
+}
+
+.project::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.project:hover::after {
+    opacity: 1;
+}
+
+/* Slideshow */
+.slideshow-container {
+    padding-top: 50px;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    max-width: 800px; /* Increase max width for bigger slideshow */
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+/* Navigation Arrows */
+.prev, .next {
+    position: absolute;
+    top: 40%;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+    transform: translate(0, -50%);
+    z-index: 10;
+}
+
+.prev {
+    left: -100px;
+}
+
+.next {
+    right: -100px;
+}
+
+.prev:hover, .next:hover {
+    opacity: 0.4;
+}
+
+/* Dots */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Slideshow Text */
+.slideshow-text {
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+
+.slideshow-text h1 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.slideshow-text h2 {
+    font-size: 15px;
+    font-weight: 200;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Adjust text size for smaller screens */
+@media (max-width: 1024px) {
+    .slideshow-text h1 {
+        font-size: 30px;
+    }
+
+    .slideshow-text h2 {
+        font-size: 18px;
+    }
+
+    .projects {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+    }
+
+    .header {
+        padding: 30px;
+    }
+
+    .nav {
+        gap: 15px; /* Reduce gap between navigation items */
+    }
+
+    .nav a {
+        font-size: 20px; /* Smaller font size for nav */
+    }
+
+    .slideshow-container {
+        width: 75%; /* Slightly larger slideshow on tablets */
+    }
+
+    .prev, .next {
+        font-size: 22px; /* Smaller arrows */
+    }
+
+    .project video {
+        max-width: 95%; /* Larger video size */
+    }
+}
+
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr; /* One column for mobile devices */
+    }
+
+    .header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .slideshow-container {
+        width: 90%; /* Full width for mobile */
+    }
+
+    .prev, .next {
+        font-size: 20px; /* Smaller arrows for mobile */
+    }
+
+    .project-text {
+        font-size: 16px; /* Smaller text on smaller screens */
+    }
+
+    .project video {
+        max-width: 95%; /* Slightly larger video size */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 20px 10px; /* Further reduce padding for very small screens */
+    }
+
+    .nav a {
+        font-size: 16px; /* Adjust nav font size for very small screens */
+    }
+
+    .projects {
+        padding: 15px; /* Add some padding around the project grid */
+    }
+
+    .project-text {
+        font-size: 14px; /* Reduce font size for text on mobile */
+    }
+
+    .project video {
+        max-width: 90%; /* Larger video size on small screens */
+    }
+
+    .slideshow-container {
+        width: 100%; /* Full width */
+    }
+}
+
+

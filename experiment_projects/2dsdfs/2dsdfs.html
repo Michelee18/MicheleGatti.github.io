@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Michele Gatti" />
+    <meta name="description" content="Explore the world of video sculptures" />
+    <title>2DSDFS</title>
+    <link rel="stylesheet" href="2dsdfs-styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <header class="header">
+        <a href="../../index/index.html" class="logo">MG</a>
+        <nav class="nav">
+            <a href="../../experiments/eperiments.html">Experiments</a>
+            <a href="../../about/about.html">About</a>
+        </nav>
+    </header>
+
+    <!-- 4 Square Videos Row -->
+    <div class="videos-row">
+        <div class="video-container square">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="./2dsdfs_materials/glsl_2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-container square">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="./2dsdfs_materials/glsl_5.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-container square">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="./2dsdfs_materials/glsl_6.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-container square">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="./2dsdfs_materials/glsl_7.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- 16:9 Video Below -->
+    <div class="video-container wide">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="./2dsdfs_materials/glsl_ui.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Text below the video -->
+    <div class="video-text">
+        <h1>2DSDFS</h1>
+        <h2>This experiment explores generating 2D Signed Distance Fields (SDFs) using only fragment shaders and basic math operations. By manipulating distance functions, it tests how procedural shapes and effects can be created without textures or geometry. The focus is on efficiency, visual complexity, and real-time rendering possibilities.</h2>
+    </div>
+</body>
+</html>
+

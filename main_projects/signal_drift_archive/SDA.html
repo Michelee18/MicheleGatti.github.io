@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Michele Gatti" />
+    <meta name="description" content="Welcome to my portfolio website" />
+    <title>SignalDriftArchive</title>
+    <link rel="stylesheet" href="SDA-styles.css"> 
+</head>
+<body>
+    <header class="header">
+        <a href="../../index/index.html" class="logo">MG</a>
+        <nav class="nav">
+            <a href="../../experiments/eperiments.html">Experiments</a>
+            <a href="../../about/about.html">About</a>
+        </nav>
+    </header>
+
+    <div class="project-container">
+        <div>
+            <div class="project">
+                <h1>Signal Drift Archive</h1>
+                <h2><strong>Tags:</strong> Projection - Installation - Archive - Radio</h2>
+                <h2><strong>Tools:</strong> Premiere - MAX 8 - Resolume Arena</h2>
+                <h3>This projection-based installation uses projection mapping to explore shortwave radio recordings through archive footage and custom Max/MSP tools.
+                     Built from Twente WebSDR recordings, it simulates radio zapping across number stations, propaganda, talk shows, and digital signals.
+                     Image experimentation and signal processing shape the audiovisual output, focusing on the structure and transmission of these broadcasts.
+                </h3>
+            </div>
+
+            <div class="archive">
+                <h3><strong>Archive:</strong> Internet Archive, Prelinger Archive</h3>
+                <h3><strong>Recordings:</strong> Twente WebDSR</h3>
+                <h3><strong>Documentation:</strong> Claudia Santillan</h3>
+            </div>      
+        </div>
+
+        <!-- Vimeo Video Embed -->
+        <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://player.vimeo.com/video/1061422549?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="SignalDriftArchive"></iframe>
+        </div>
+    </div>
+
+    <!-- Creative Process Section with Video -->
+    <div class="creative-process-section">
+        <h2>Creative Process</h2>
+        <div class="creative-process-content">
+            <div class="creative-process-text">
+                <p>The creative process behind the Signal Drift Archive focused on creating an immersive experience that explores the intersection of technology, memory, and communication. Through a combination of archival material and custom-built tools, the project aims to investigate the aesthetic and socio-political dimensions of radio transmissions.</p>
+                <p>The project draws inspiration from the nature of radio signals, focusing on their unpredictable qualities and the history they carry. By using radio as a medium, the installation also explores the invisible networks that connect the world, and how they shape our understanding of time and space.</p>
+            </div>
+            <div class="creative-process-video">
+                <div class="setup-item">
+                    <img src="SDA_materials/process.png" alt="Radio Equipment">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tools Section -->
+    <div class="tools-section">
+        <h2>Custom tools</h2>
+        <div class="tools-content">
+            <div class="tools-text">
+                <p>I developed custom tools in Max/MSP to generate both visuals and audio, specifically designed for integration into the audio-visual installation.
+                     These tools allow for the manipulation and processing of sound and image.</p>
+                             <p>RTTY decoder:</p><p>Implements a real-time RTTY decoder built in Max MSP, using a 5-bit Baudot code table to convert incoming RTTY signals into text. It processes audio input, extracts the signal, and maps it to readable characters.</p>
+                             <p>Create you MeteoFax:</p><p> Implements a SSTV (Slow Scan Television) simulator in Max MSP that mimics MeteoFax-style image transmissions. It applies effects like noise, distortion, and signal artifacts to replicate the look of received SSTV images. Users can adjust parameters to simulate different transmission qualities, making it useful for testing and artistic experiments.</p>
+            </div>
+            <div class="tools-images">
+                <div class="tool">
+                    <img src="./SDA_materials/rtty.png" alt="Premiere Pro">
+                </div>
+                <div class="tool">
+                    <img src="./SDA_materials/sstv.png" alt="MAX 8">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Setup Section -->
+    <!-- Setup Section -->
+<div class="setup-section">
+    <h2>Setup</h2>
+    <div class="setup-content">
+        <div class="setup-text">
+            <p>Technology list:</p>
+            <ul>
+                <li>2 Optoma projectors used in stack (Positioning the projectors on top of each other to project the same image but with greater power) with 5000 ANSI lumen power and a projection ratio of 0.5.</li>
+                <li>2 Audio speakers</li>
+                <li>1 Audio mixer</li>
+                <li>1 PC with Resolume Arena installed</li>
+            </ul>
+    
+            <p>Configuration:</p>
+            <ul>
+                <li>The projectors will be connected to the broadcasting PC with two fibre optic HDMI cables.</li>
+                <li>The speakers will be connected to the audio mixer, from which the equalisation can be adjusted, which in turn is connected to the broadcast PC via USB.</li>
+            </ul>
+
+            <!-- New text section -->
+            <div class="additional-setup-text">
+                <p>Exhibition:</p>
+                <p>The installation was showcased at Cinema Anteo in Milan during the 2025 PLAI exhibition of the NABA New Technologies Area.</p>
+            </div>
+        </div>
+        <div class="setup-images">
+            <div class="setup-item">
+                <img src="SDA_materials/set1-02.png" alt="Projection Setup">
+            </div>
+            <div class="setup-item">
+                <img src="SDA_materials/set1_Tavola disegno 1.png" alt="Radio Equipment">
+            </div>
+            <div class="setup-item">
+                <img src="SDA_materials/plai.png" alt="Radio Equipment">
+            </div>
+        </div>
+    </div>
+</div>
+
+   <!-- PDF Section -->
+    <div class="pdf-content">
+        <h2>More resources here</h2>
+        <!-- Download Button -->
+        <a href="./SDA_materials/presentzione.pdf" download="Signal_Drift_Archive_Presentation" class="download-button">
+            <button>Presentation (ENG)</button>
+        </a>
+    </div>
+
+
+</body>
+</html>
+
+
+
+

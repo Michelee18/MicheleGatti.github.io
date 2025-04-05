@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Michele Gatti" />
+    <meta name="description" content="Explore the world of video sculptures" />
+    <title>Strange Attractors</title>
+    <link rel="stylesheet" href="strangeattractors-styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <header class="header">
+        <a href="../../index/index.html" class="logo">MG</a>
+        <nav class="nav">
+            <a href="../../experiments/eperiments.html">Experiments</a>
+            <a href="../../about/about.html">About</a>
+        </nav>
+    </header>
+
+    <!-- Video container -->
+    <div class="videos-row">
+        <div class="video-container">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="./strangeattractors materials/attractors.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-container">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="./strangeattractors materials/lorentz.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Text below the video -->
+    <div class="video-text">
+        <h1>Strange Attractors</h1>
+        <h2>This experiment simulates particles based on the Lorenz and Thomas attractors using shaders in Max/MSP. The goal is to visualize the chaotic behavior of these systems in real-time by calculating their dynamics and rendering the resulting particle movements through shaders.</h2>
+    </div>
+</body>
+</html>

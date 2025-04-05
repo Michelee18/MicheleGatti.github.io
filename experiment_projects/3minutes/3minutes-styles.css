@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background: #1d1d1d;
+    color: white;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 60px;
+    background: #1d1d1d;
+}
+
+a.logo {
+    font-size: 30px;
+    font-weight: 550;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a.logo:hover {
+    color: #4b4b4b;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #4b4b4b;
+}
+
+/* Video Column */
+.video-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    gap: 60px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Video Container */
+.video-container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* YouTube Embed */
+.youtube-embed {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.youtube-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Text Below the Video */
+.video-text {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.video-text h1 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.video-text h2 {
+    font-size: 18px;
+    font-weight: 200;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Extra bottom space */
+body::after {
+    content: "";
+    display: block;
+    height: 100px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .video-column {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .video-column {
+        max-width: 100%;
+        padding: 20px;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-column {
+        gap: 40px;
+    }
+
+    .nav a {
+        font-size: 18px;
+    }
+
+    .video-text h1 {
+        font-size: 24px;
+    }
+
+    .video-text h2 {
+        font-size: 16px;
+    }
+}

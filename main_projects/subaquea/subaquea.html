@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Michele Gatti" />
+    <meta name="description" content="Welcome to my portfolio website" />
+    <title>Subacquea</title>
+    <link rel="stylesheet" href="subaquea-styles.css"> 
+</head>
+<body>
+    <header class="header">
+        <a href="../../index/index.html" class="logo">MG</a>
+        <nav class="nav">
+            <a href="../../experiments/eperiments.html">Experiments</a>
+            <a href="../../about/about.html">About</a>
+        </nav>
+    </header>
+
+    <div class="project-container">
+        <div>
+            <div class="project">
+                <h1>Subacquea</h1>
+                <h2><strong>Tags:</strong> Speculative - Shaders - Sound</h2>
+                <h2><strong>Tools:</strong> MAX 8 </h2>
+                <h3>This project simulates a scuba diving experience using Max/MSP and sound manipulation techniques to recreate the auditory sensations of being underwater. By altering sound properties, it mimics the way audio behaves beneath the surface, creating an immersive experience. Through real-time processing, the simulation captures the depth, movement, and atmospheric qualities of a dive, offering a unique sensory exploration.
+                </h3>
+            </div>  
+        </div>
+
+         <!-- Vimeo Video Embed -->
+         <div style="padding:0% 0 0 0;position:relative;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mbKfAbcJeyY?si=uqaM8N3XCCR2Lnbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <!-- Tools Section -->
+    <div class="tools-section">
+        <h2>Visual Approach</h2>
+        <div class="tools-content">
+            <div class="tools-text">
+                <p></p>
+                             <p>Shader Programming:</p><p>Raymarching with shaders was used to simulate the behavior of air molecules in relation to depth. This technique creates a dynamic visual representation of how air compresses and disperses underwater, enhancing the sense of immersion and depth perception in the simulation.</p>
+                             <p>Interface:</p><p> The project includes a custom interface that replicates the essential data divers rely on during a dive. It displays real-time information such as depth, pressure, remaining dive time, and available air supply. This interface not only enhances realism but also provides an interactive element, reinforcing the feeling of being submerged in a controlled yet unpredictable underwater environment.</p>
+            </div>
+            <div class="tools-images">
+                <div class="tools-video-wrapper">
+                    <video class="creative-process-video-embed" autoplay loop muted>
+                        <source src="./subaquea_materials/raymarching.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="tool">
+                    <img src="./subaquea_materials/interfaccia.png" alt="MAX 8">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Setup Section -->
+    <div class="setup-section">
+        <h2>Sound Design</h2>
+        <div class="setup-content">
+            <div class="setup-text">
+                <p>Frquency Filtering:</p>
+                <ul>
+                    A low-pass filter dynamically reduces higher frequencies as depth increases, simulating how water absorbs sound and alters auditory perception. This effect creates a sense of pressure and immersion, mirroring real-life underwater acoustics.
+                </ul>
+    
+                <p>Bineural Beats:</p>
+                <ul>
+                    binaural beats were incorporated as a speculative element to induce relaxation, reflecting the altered mental states some divers experience due to prolonged submersion and sensory adaptation.
+                </ul>
+            </div>
+            <div class="setup-images">
+                <div class="setup-item">
+                    <img src="./subaquea_materials/lopass.png" alt="Projection Setup">
+                </div>
+                <div class="setup-item">
+                    <img src="./subaquea_materials/bineural.png" alt="Radio Equipment">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

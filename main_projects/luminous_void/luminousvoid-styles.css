@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background: #1d1d1d;
+}
+
+/* Fixed Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #1d1d1d;
+    color: white;
+    flex-wrap: nowrap; /* Ensures everything stays in one row */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.header .logo {
+    font-size: 30px;
+    font-weight: 550;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.header .logo:hover {
+    color: #4b4b4b;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    flex-shrink: 1;
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hides scrollbar in IE/Edge */
+}
+
+.nav::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome/Safari */
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
+    min-width: fit-content; /* Prevents text from shrinking too much */
+}
+
+.nav a:hover {
+    color: #4b4b4b;
+}
+
+
+
+/* Project section layout */
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 60px;
+    color: white;
+}
+
+.project {
+    color: white;
+    width: 100%; /* Full width by default */
+    max-width: 50%; /* Keep it limited for large screens */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project h1 {
+    font-size: 65px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.project h2 {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+.project h3 {
+    padding-top: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 250;
+}
+
+.archive {
+    color: white;
+    width: 100%;
+    text-align: left;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.archive h3 {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+.project-container iframe {
+    margin-top: 20px; /* Adjust as needed */
+    width: 100%;
+    height: 100%;
+    max-width: 100%; /* Ensure it does not overflow its container */
+    border: none; /* Optional: Remove any iframe borders */
+    aspect-ratio: 16/9; /* Maintain 16:9 aspect ratio */
+}
+
+/* Tools Section Styling */
+.tools-section {
+    padding: 50px 60px;
+    color: white;
+    margin-top: 40px;
+    border-top: 1px solid #4b4b4b;
+}
+
+.tools-section h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+.tools-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tools-text {
+    flex: 0.4; /* Text takes 40% of the space */
+    font-size: 15px;
+    line-height: 1.8; /* Increased line height for better readability */
+    font-weight: 250;
+}
+
+/* Custom margins for different gaps */
+.tools-text p {
+    margin-bottom: 45px; /* Default gap */
+}
+
+.tools-text p:nth-child(2) {
+    margin-bottom: 5px; /* Larger gap for the second paragraph */
+    font-size: 25px;
+    font-weight: 450;
+}
+
+.tools-text p:nth-child(3) {
+    margin-bottom: 50px; /* Smaller gap for the third paragraph */
+}
+
+.tools-text p:nth-child(4) {
+    margin-bottom: 5px; /* Larger gap for the second paragraph */
+    font-size: 25px;
+    font-weight: 450;
+}
+
+.tools-text p:last-child {
+    margin-bottom: 35px; /* Larger gap for the last paragraph */
+}
+
+.tools-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 0.6; /* Images take 60% of the space */
+}
+
+.tool {
+    text-align: center;
+}
+
+.tool h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.tool img {
+    width: 100%; /* Ensures images fill their container */
+    max-width: 700px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the image doesn't stretch */
+    margin-bottom: 10px;
+    border-radius: 8px; /* Optional: Adds rounded corners to the images */
+}
+
+/* Setup Section Styling */
+.setup-section {
+    padding: 50px 60px;
+    color: white;
+    margin-top: 40px;
+    border-top: 1px solid #4b4b4b;
+}
+
+.setup-section h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+.setup-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.setup-text {
+    flex: 0.4; /* Text takes 40% of the space */
+    font-size: 15px;
+    line-height: 1.8; /* Increased line height for better readability */
+    font-weight: 250;
+}
+
+/* Custom margins for different gaps */
+.setup-text p {
+    font-size: 25px;
+    font-weight: 450;
+    margin-bottom: 15px; /* Default gap */
+}
+.setup-text p:nth-child(2) {
+    margin-bottom: 5px; /* Larger gap for the second paragraph */
+    font-size: 25px;
+    font-weight: 450;
+}
+
+.setup-text p:nth-child(3) {
+    margin-top: 50px;
+    margin-bottom: 10px; /* Smaller gap for the third paragraph */
+}
+
+.setup-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 0.6; /* Images take 60% of the space */
+}
+
+.setup-item {
+    text-align: center;
+}
+
+.setup-item h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.setup-item img {
+    width: 100%; /* Ensures images fill their container */
+    max-width: 700px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the image doesn't stretch */
+    margin-bottom: 10px;
+    border-radius: 8px; /* Optional: Adds rounded corners to the images */
+}
+
+/* PDF Section Styling */
+.pdf-content {
+    padding: 50px 60px;
+    color: white;
+    margin-top: 50px;
+    border-top: 1px solid #4b4b4b; /* Adds a border above the section */
+    text-align: center;
+}
+
+.pdf-content h2 {
+    font-size: 40px;
+    margin-top: 20px; /* Space it below the line */
+    font-weight: 200; /* Ensure there's no large gap after the h2 */
+}
+
+/* PDF Section Download Button Styling */
+.download-button {
+    text-decoration: none; /* Remove underline */
+    padding: 0; /* Remove any padding in the button container */
+    color: white;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    margin-top: 50px; /* Adjust margin to remove unnecessary space */
+    margin-bottom: 50px; /* Space below the button */
+}
+
+.download-button button {
+    background-color: transparent; /* Transparent background for the button */
+    color: white; /* White text */
+    padding: 12px 25px; /* Padding */
+    font-size: 15px; /* Font size to match header text size */
+    border: 1px solid white; /* White border with rounded corners */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions for hover */
+    font-weight: 200;
+}
+
+.download-button button:hover {
+    background-color: white; /* White background on hover */
+    color: #1d1d1d; /* Dark text color on hover */
+}
+
+.download-button button:focus {
+    outline: none; /* Remove outline when focused */
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+    .header {
+        padding: 20px 40px;
+    }
+    
+    .project-container {
+        padding: 30px;
+    }
+    
+    .project {
+        max-width: 75%; /* Expanding on medium screens */
+    }
+
+    .tools-section {
+        padding: 30px;
+    }
+
+    .setup-section {
+        padding: 30px;
+    }
+
+    .tools-content, 
+    .setup-content {
+        flex-direction: column;
+    }
+
+    .tools-images, 
+    .setup-images {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .tool,
+    .setup-item {
+        width: 100%;
+    }
+
+    .tool img,
+    .setup-item img {
+        max-width: 100%; /* No limit to image size */
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 30px;
+    }
+
+    .nav {
+        gap: 10px;
+    }
+
+    .project-container {
+        padding: 20px;
+    }
+
+    .project {
+        max-width: 90%; /* Almost full width on tablets */
+    }
+
+    .project h1 {
+        font-size: 28px;
+    }
+
+    .project h2, 
+    .project h3, 
+    .collaborators h3 {
+        font-size: 12px;
+    }
+
+    .tools-section h2,
+    .setup-section h2 {
+        font-size: 26px;
+    }
+
+    .tools-section p,
+    .setup-section p {
+        font-size: 14px;
+    }
+
+    .tool h3,
+    .setup-item h3 {
+        font-size: 14px;
+    }
+
+    .tool img,
+    .setup-item img {
+        max-width: 100%; /* Make sure images use 100% of available width */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 15px;
+    }
+
+    .nav {
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 18px;
+    }
+
+    .project-container {
+        padding: 15px;
+    }
+
+    .project {
+        max-width: 100%; /* Full width for small screens */
+    }
+
+    .project h1 {
+        font-size: 24px;
+    }
+
+    .project h2, 
+    .project h3, 
+    .collaborators h3 {
+        font-size: 10px;
+    }
+
+    .tools-section h2,
+    .setup-section h2 {
+        font-size: 24px;
+    }
+
+    .tools-section p,
+    .setup-section p {
+        font-size: 12px;
+    }
+
+    .tool h3,
+    .setup-item h3 {
+        font-size: 12px;
+    }
+
+    .tool img,
+    .setup-item img {
+        max-width: 100%; /* Ensure the images scale to fit small screens */
+    }
+}
+

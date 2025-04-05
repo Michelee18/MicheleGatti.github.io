@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Michele Gatti" />
+    <meta name="description" content="Explore the world of video sculptures" />
+    <title>particles</title>
+    <link rel="stylesheet" href="particles-styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <header class="header">
+        <a href="../../index/index.html" class="logo">MG</a>
+        <nav class="nav">
+            <a href="../../experiments/eperiments.html">Experiments</a>
+            <a href="../../about/about.html">About</a>
+        </nav>
+    </header>
+
+    <!-- Video container -->
+    <div class="video-row">
+        <!-- First video -->
+        <div class="video-container">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="./particles_materials/mb_2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Second video -->
+        <div class="video-container">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="./particles_materials/mb_3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Third video -->
+        <div class="video-container">
+            <video autoplay muted loop playsinline class="background-video">
+                <source src="./particles_materials/mb_4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Text below the video -->
+    <div class="video-text">
+        <h1>Motion Blur Particles</h1>
+        <h2>This experiment simulates motion blur in particle systems using shaders in Max/MSP. The focus is on creating realistic blur effects by accumulating particle positions over time in the shader, mimicking the visual result of fast-moving objects in a dynamic environment.</h2>
+    </div>
+</body>
+</html>
+
+

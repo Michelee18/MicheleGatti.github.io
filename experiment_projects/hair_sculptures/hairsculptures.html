@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Michele Gatti" />
+    <meta name="description" content="Welcome to my portfolio website" />
+    <title>Hair Sculptures</title>
+    <link rel="stylesheet" href="hairsculptures-styles.css"> <!-- Link to a single CSS file -->
+</head>
+<body>
+    <header class="header">
+        <a href="../../index/index.html" class="logo">MG</a>
+        <nav class="nav">
+            <a href="../../experiments/eperiments.html">Experiments</a>
+            <a href="../../about/about.html">About</a>
+        </nav>
+    </header>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <div class="mySlides fade" style="background-image: url('../../materials/hair_1.jpg');"></div>
+        <div class="mySlides fade" style="background-image: url('../../materials/hair_2.jpg');"></div>
+        <div class="mySlides fade" style="background-image: url('../../materials/hair_3.jpg');"></div>
+        <div class="mySlides fade" style="background-image: url('../../materials/hair_4.jpg');"></div>
+        <div class="mySlides fade" style="background-image: url('../../materials/hair_5.jpg');"></div>
+        <div class="mySlides fade" style="background-image: url('../../materials/hair_6.jpg');"></div>
+        <div class="mySlides fade" style="background-image: url('../../materials/hair_7.jpg');"></div>
+        <div class="mySlides fade" style="background-image: url('../../materials/hair_8.jpg');"></div>
+        <div class="mySlides fade" style="background-image: url('../../materials/hair_9.jpg');"></div>
+        <div class="mySlides fade" style="background-image: url('../../materials/hair_10.jpg');"></div>
+
+        <div class="slideshow-text">
+            <h1>Hair Sculptures</h1>
+            <h2>This Houdini project generates structural formations using hair curves. By applying procedural guides, forces, and dynamics, the curves are shaped into organic or architectural patterns. The system allows control over density, length, flow, and interaction, enabling diverse and customizable designs.
+            </h2>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        let slides = document.getElementsByClassName("mySlides");
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            if (slideIndex >= slides.length) { slideIndex = 0; }
+            if (slideIndex < 0) { slideIndex = slides.length - 1; }
+
+            slides[slideIndex].style.display = "block";  
+            slideIndex++;
+        }
+        
+        setInterval(showSlides, 3000); // Change slide every 3 seconds
+        showSlides();
+    </script>
+</body>
+</html>
+
+
+

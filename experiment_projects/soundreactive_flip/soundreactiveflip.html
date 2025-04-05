@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Michele Gatti" />
+    <meta name="description" content="Explore the world of video sculptures" />
+    <title>Soundreactive Flip</title>
+    <link rel="stylesheet" href="soundreactiveflip-styles.css">
+    <style>
+        /* Simple style to make video controls subtle */
+        video::-webkit-media-controls {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        video:hover::-webkit-media-controls {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="../../index/index.html" class="logo">MG</a>
+        <nav class="nav">
+            <a href="../../experiments/eperiments.html">Experiments</a>
+            <a href="../../about/about.html">About</a>
+        </nav>
+    </header>
+
+    <div class="video-container">
+        <!-- Removed 'autoplay' and kept 'controls' for user-initiated playback -->
+        <video loop playsinline controls class="background-video">
+            <source src="./soundreactiveflip_materials/flip render ultimo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="video-text">
+        <h1>Soundreactive Flip</h1>
+        <h2>This Houdini experiment combines CHOPs with a small-scale fluid simulation, making the fluid react to audio input. The sound data drives the fluid's motion, creating dynamic behavior based on the audio's frequencies and amplitude. The result is a fluid simulation that responds in real-time to changes in the sound, showcasing the integration of audio and simulation.</h2>
+    </div>
+</body>
+</html>
