@@ -7,22 +7,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width" />
     <meta name="author" content="Michele Gatti" />
-    <meta name="description" content="Welcome to my portfolio website" />
+    <meta name="description" content="" />
     <title>Vellum</title>
-    <link rel="stylesheet" href="vellum-styles.css"> 
+    <link rel="stylesheet" href="vellum-styles.css">
 </head>
 <body>
     <header class="header">
-        <!-- Link the logo to the index.html (Home Page) -->
         <a href="../../index.html" class="logo">MG</a>
         <nav class="nav">
-            <!-- Link to Experiments page -->
             <a href="../../experiments/eperiments.html">Experiments</a>
-            <!-- Link to About page -->
             <a href="../../about/about.html">About</a>
         </nav>
     </header>
-   
+
+    <!-- Media grid container -->
+    <div class="media-grid">
+        <!-- Video 1 -->
+        <div class="media-item">
+            <video autoplay muted loop playsinline class="vertical-media">
+                <source src="./vellum_materials/voronoi-cloth-buon.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <!-- Video 2 -->
+        <div class="media-item">
+            <video autoplay muted loop playsinline class="vertical-media">
+                <source src="./vellum_materials/flip-voronoi.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <!-- Image 1 -->
+        <div class="media-item">
+            <img src="./vellum_materials/cuscion9.jpg" alt="Strange Attractor Image" class="vertical-media">
+        </div>
+        
+        <!-- Video 3 -->
+        <div class="media-item">
+            <video autoplay muted loop playsinline class="vertical-media">
+                <source src="./vellum_materials/ice-cream-.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <!-- Video 4 -->
+        <div class="media-item">
+            <video autoplay muted loop playsinline class="vertical-media">
+                <source src="./vellum_materials/stitches.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <!-- Image 2 -->
+        <div class="media-item">
+            <img src="./vellum_materials/ice-cream-render.jpg" alt="Strange Attractor Image" class="vertical-media">
+        </div>
+    </div>
+
+    <!-- Text below the grid -->
+    <div class="media-text">
+        <h1>Vellum</h1>
+        <h2>A collection of experiments using vellum dynamics in Houdini, in combination with voronoi patterns, colliders, stitches and falloffs.</h2>
+    </div>
 </body>
 </html>
-
